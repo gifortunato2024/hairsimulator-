@@ -10,8 +10,9 @@ st.image(foto, caption="Camila Cabello L'Oreal", width= 500)
 
 st.header("Tipo de cabelo")
 st.image("tiposdecabelo.png", width=300)
-st.radio("Qual o seu tipo de cabelo?", ['1', '2A', '2B'])
-st.header("Qual a cor do seu cabelo?")
+st.radio("Qual o seu tipo de cabelo?", ['1', '2A', '2B', '2C', '3A', '3B', '3C', '4A', '4B'])
+st.header("Qual a cor do seu cabelo?")?
+st
 st.image("coresdecabelo.png", width=300)
 st.header("Quais procedimentos você já realizou?")
 st.image("virgem.jpg", width=200)
