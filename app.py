@@ -7,7 +7,7 @@ st.sidebar.header('Hair Revolution')
 st.sidebar.write("O app que vai transformar a sua forma de cuidar do cabelo")
 foto = Image.open('camz.jpeg') 
 st.image(foto, caption="Camila Cabello L'Oreal", width= 500)
-tab1, tab2, tab3 = st.tabs(["Tipo de cabelo", "Cor do cabelo", "Procedimentos"])
+
 st.header("Tipo de cabelo")
 st.image("tiposdecabelo.png", width=300)
 st.radio("Qual o seu tipo de cabelo?", ['1', '2A', '2B'])
