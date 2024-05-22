@@ -14,5 +14,6 @@ st.radio("Qual o seu tipo de cabelo?", ['1', '2A', '2B', '2C', '3A', '3B', '3C',
 st.header("Cor do cabelo")
 st.radio("Qual a cor do seu cabelo?", ['Castanho claro', 'Castanho Escuro', 'Preto', 'Loiro claro', 'Loiro escuro', 'Ruivo', 'Platinado'])
 st.image("coresdecabelo.png", width=300)
-st.header("Quais procedimentos você já realizou?")
+st.header("Procedimentos")
 st.image("virgem.jpg", width=200)
+st.radio("Quais procedimentos você já realizou?", ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos', 'Cabelo virgem'])
