@@ -1,6 +1,6 @@
 import streamlit as st 
 st.title('hairrevolution') 
-with st.sidebar:O
+with st.sidebar:
 st.header('Hair Revolution')
 st.write("O app que vai transformar a sua forma de cuidar do cabelo")
 from PIL import Image
