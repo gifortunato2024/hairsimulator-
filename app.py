@@ -3,6 +3,12 @@ from PIL import Image
 
 st.title('Hair Revolution')
 
+st.button("Reset", type="primary")
+if st.button("START"):
+    st.write(" ")
+else:
+    st.write("failed")
+
 st.sidebar.header('Hair Revolution')
 st.sidebar.write("O app que vai transformar a sua forma de cuidar do cabelo")
 foto = Image.open('camz.jpeg') 
