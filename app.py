@@ -3,9 +3,9 @@ from PIL import Image
 
 st.title('Hair Revolution')
 
-st.button("Reset", type="primary")
+st.button("START", type="primary")
 if st.button("START"):
-    st.write(" ")
+    st.write("Selecione as opções de acordo com o seu cabelo")
 else:
     st.write("failed")
 
