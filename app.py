@@ -35,4 +35,4 @@ with st.form('form'):
 if botao: 
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
     st.write(frase)
-    st.write(translator(frase))
+    st.write(translator.translate(frase))
