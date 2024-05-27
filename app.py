@@ -5,7 +5,8 @@ st.title('Hair Revolution')
 
 
 st.sidebar.header('Hair Revolution')
-st.sidebar.write("O app que vai transformar a sua forma de cuidar do cabelo")
+st.sidebar.write("O app que vai transformar a sua forma de cuidar do cabelo.
+Se você é um(a) amante da LÓreal professional esse é o seu site ideal")
 foto = Image.open('camz.jpeg') 
 st.image(foto, caption="Camila Cabello L'Oreal", width= 500)
 
