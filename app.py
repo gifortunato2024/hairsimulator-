@@ -41,3 +41,7 @@ if botao:
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
     st.write(frase)
     st.write(translator.translate(frase))
+
+picture_user = st.camera_input("Tire uma foto do seu rosto com o cabelo para frente, boa iluminação e um fundo neutro")
+if picture_user:
+    st.image(picture_user)
