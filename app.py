@@ -1,5 +1,8 @@
 import streamlit as st
 from PIL import Image
+from deep_translator import GoogleTranslator
+
+translator = GoogleTranslator(source='pt', target='en')
 
 st.title('Hair Revolution')
 
@@ -28,3 +31,8 @@ with st.form('form'):
     st.header("Características")
     características_cabelo = st.radio("Selecione as característica do seu cabelo", ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal']) 
     botao = st.form_submit_button('enviar') 
+
+if botao: 
+    frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
+    st.write(frase)
+    st.write(translator(frase))
