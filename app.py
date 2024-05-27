@@ -35,7 +35,7 @@ with st.form('form'):
     st.header("Características")
     características_cabelo = st.radio("Selecione as característica do seu cabelo", ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'],
                                      horizontal=True) 
-     st.header("Opções")
+    st.header("Opções")
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
