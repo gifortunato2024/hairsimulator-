@@ -18,17 +18,23 @@ with st.form('form'):
     tipo_cabelo = st.radio("Qual o seu tipo de cabelo?",  ['1', '2A', '2B', '2C', '3A', '3B', '3C', '4A', '4B'],
                           horizontal=True)
     st.header("Cor do cabelo")
-    cor_cabelo = st.radio("Qual a cor do seu cabelo?", ['Castanho claro', 'Castanho Escuro', 'Preto', 'Loiro claro', 'Loiro escuro', 'Ruivo', 'Platinado'])
+    cor_cabelo = st.radio("Qual a cor do seu cabelo?", ['Castanho claro', 'Castanho Escuro', 'Preto', 'Loiro claro', 'Loiro escuro', 'Ruivo', 'Platinado'], 
+                          horizontal=True)
     st.header("Procedimentos")
-    procedimentos_cabelo = st.radio("Quais procedimentos você já realizou?", ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos', 'Cabelo virgem'])
+    procedimentos_cabelo = st.radio("Quais procedimentos você já realizou?", ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos', 'Cabelo virgem']
+                                   horizontal=True)
     st.header("Genero") 
-    genero = st.radio("Selecione seu genero", ['Feminino', 'Masculino', 'Neutro']) 
+    genero = st.radio("Selecione seu genero", ['Feminino', 'Masculino', 'Neutro']
+                     horizontal=True) 
     st.header("Cor de pele") 
-    cor_pele = st.radio("Selecione sua cor de pele", ['Preto', 'Branco', 'Amarelo', 'Indigena', 'Pardo'])
+    cor_pele = st.radio("Selecione sua cor de pele", ['Preto', 'Branco', 'Amarelo', 'Indigena', 'Pardo']
+                       horizontal=True)
     st.header("Comprimento") 
-    comprimento_cabelo = st.radio("Selecione o comprimento do seu cabelo", ['Extra curto', 'Curto', 'Médio', 'Longo', 'Extra longo'])       
+    comprimento_cabelo = st.radio("Selecione o comprimento do seu cabelo", ['Extra curto', 'Curto', 'Médio', 'Longo', 'Extra longo']
+                                 horizontal=True)       
     st.header("Características")
-    características_cabelo = st.radio("Selecione as característica do seu cabelo", ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal']) 
+    características_cabelo = st.radio("Selecione as característica do seu cabelo", ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal']
+                                     horizontal=True) 
     botao = st.form_submit_button('enviar') 
 
 if botao: 
