@@ -17,7 +17,9 @@ with st.form('form'):
     st.image("tiposdecabelo.png", width=300)
  
     
-    tipo_cabelo = st.radio("Qual o seu tipo de cabelo?", ['1', '2A', '2B', '2C', '3A', '3B', '3C', '4A', '4B'])
+    tipo_cabelo = st.radio("Qual o seu tipo de cabelo?",
+                           ['1', '2A', '2B', '2C', '3A', '3B', '3C', '4A', '4B'],
+                          horixontal=True)
     st.header("Cor do cabelo")
     cor_cabelo = st.radio("Qual a cor do seu cabelo?", ['Castanho claro', 'Castanho Escuro', 'Preto', 'Loiro claro', 'Loiro escuro', 'Ruivo', 'Platinado'])
     st.header("Procedimentos")
