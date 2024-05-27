@@ -37,7 +37,7 @@ with st.form('form'):
                                      horizontal=True) 
      st.header("Opções")
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
-                             horizontal=True) 
+                            horizontal=True) 
 
     st.multiselect("Escolha a linha que você quer ver o resultado no seu cabelo", ['Opcao 1', 'opcao 2']) 
     
