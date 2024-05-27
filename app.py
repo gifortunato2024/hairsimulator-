@@ -35,6 +35,12 @@ with st.form('form'):
     st.header("Características")
     características_cabelo = st.radio("Selecione as característica do seu cabelo", ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'],
                                      horizontal=True) 
+     st.header("Opções")
+    opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
+                             horizontal=True) 
+
+    st.multiselect("Escolha a linha que você quer ver o resultado no seu cabelo", ['Opcao 1', 'opcao 2', ]) 
+    
     botao = st.form_submit_button('enviar') 
 
 if botao: 
