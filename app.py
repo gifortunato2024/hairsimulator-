@@ -23,8 +23,8 @@ with st.form('form'):
     st.header("Procedimentos")
     procedimentos_cabelo = st.radio("Quais procedimentos você já realizou?", ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos', 'Cabelo virgem'],
                                    horizontal=True)
-    st.header("Genero") 
-    genero = st.radio("Selecione seu genero", ['Feminino', 'Masculino', 'Neutro'],
+    st.header("Gênero") 
+    genero = st.radio("Selecione seu gênero", ['Feminino', 'Masculino', 'Neutro'],
                      horizontal=True) 
     st.header("Cor de pele") 
     cor_pele = st.radio("Selecione sua cor de pele", ['Preto', 'Branco', 'Amarelo', 'Indigena', 'Pardo'],
@@ -39,7 +39,7 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-    st.multiselect("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular'])
+    st.multiselect("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier', 'TecniArt', 'Maijrel', 'INOA'])
     
     botao = st.form_submit_button('enviar') 
 
