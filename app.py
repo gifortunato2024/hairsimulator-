@@ -102,9 +102,11 @@ genero_translation = {'homem': 'man', 'mulher': 'woman'}
     
 if submit:
     api, app, swapper = load_objects()
-
-    with open(f'user.jpg', 'wb') as f:
-        f.write(foto.read())
+    try:
+        with open(f'user.jpg', 'wb') as f:
+            f.write(foto.read())
+    except:
+        st.error('Erro ao processar foto. Envie novamente.')
 
     st.write(f'Você escolheu um cabelo {tipo}, cor {cor}, pele {pele} e gênero {genero}')
     try:
