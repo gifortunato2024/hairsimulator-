@@ -1,3 +1,10 @@
 deep-translator 
-insightface
 diffusers
+streamlit
+pillow
+opencv-python-headless
+insightface
+numpy
+matplotlib
+webuiapi
+onnxruntime
