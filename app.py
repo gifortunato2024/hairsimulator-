@@ -40,6 +40,8 @@ with st.form('form'):
                             horizontal=True) 
 
 
+    st.subheader("Linhas L'Oréal Professionel")
+    st.image("Fotoslinhas.jpg", width=400)
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
     
     botao = st.form_submit_button('enviar') 
