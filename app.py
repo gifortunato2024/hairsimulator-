@@ -109,4 +109,4 @@ if submit:
     result_swap = swap_faces('fake.jpg', 'user.jpg')
     plt.imsave('new.jpg', result_swap[:, :, ::-1])
     with st.expander('Resultado', expanded=True):
-        st.image('new.jpg', width=400)
+    st.image('new.jpg', width=400)
