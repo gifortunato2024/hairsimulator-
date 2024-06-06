@@ -55,15 +55,21 @@ descricoes_linhas = {
     'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
 }
 
-selected_lines = []
+selected_line = None
+
 for linha, descricao in descricoes_linhas.items():
-    checkbox = st.checkbox(linha, key=linha)
     st.write(descricao)
-    if checkbox:
-        selected_lines.append(linha)
+    if st.checkbox(linha, key=linha):
+        selected_line = linha
 
-
-botao = st.form_submit_button('enviar') 
+if selected_line:
+    st.write("Você selecionou a linha:", selected_line)
+    if st.button('Enviar'):
+        # Salvar resposta e prosseguir para o próximo passo
+        # Implemente sua lógica aqui
+        st.write("Resposta salva! Próximo passo...")
+else:
+    st.write("Nenhuma linha selecionada.")
 
 if botao: 
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
