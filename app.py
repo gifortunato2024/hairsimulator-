@@ -41,9 +41,28 @@ with st.form('form'):
 
 
     st.subheader("Linhas L'Oréal Professionel")
-    st.image("Linhassite .jpg", width=400)
-    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
-    
+st.image("Linhassite .jpg", width=400)
+
+descricoes_linhas = {
+    'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
+    'Metal Detox': 'Proteção contra poluentes e impurezas.',
+    'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
+    'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
+    'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
+    'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
+    'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
+    'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
+    'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
+    'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
+    'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
+}
+
+linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", list(descricoes_linhas.keys()))
+
+# Exibir descrição ao lado do radio button
+if linha in descricoes_linhas:
+    st.write("Descrição:", descricoes_linhas[linha])
+
     botao = st.form_submit_button('enviar') 
 
 if botao: 
