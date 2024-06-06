@@ -40,8 +40,8 @@ with st.form('form'):
 
     import streamlit as st
 
-   st.subheader("Linhas L'Oréal Professionel")
-   st.image("Linhassite .jpg", width=400)
+    st.subheader("Linhas L'Oréal Professionel")
+    st.image("Linhassite .jpg", width=400)
 
 descricoes_linhas = {
     'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
