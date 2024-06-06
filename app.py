@@ -40,7 +40,7 @@ def generate_image(tipo, cor, pele, genero):
                              cfg_scale=7, denoising_strength=0.8,
                              inpaint_full_res=0, inpaint_full_res_padding=32, inpainting_fill=1,
                              inpainting_mask_invert=0, mask_blur=4, restore_faces=True,
-                             save_images=True, send_images=True, alwayson_scripts={"Extra options": {"args": [True, "GPFGAN"]}},
+                             save_images=True, send_images=True,
                              override_settings={"face_restoration": True, "face_restoration_model": "GPFGAN"},
                              steps=25)
     result_gen.image.save('fake.jpg')
