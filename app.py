@@ -57,7 +57,8 @@ descricoes_linhas = {
     'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
 }
 
-selected_line = None
+selected_line = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", list(descricoes_linhas.keys()))
+
 
 for linha, descricao in descricoes_linhas.items():
     st.write(descricao)
