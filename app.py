@@ -38,7 +38,7 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-    st.subheader("Linhas L'Oréal Professionel")
+        st.subheader("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=400)
 
     descricoes_linhas = {
@@ -55,11 +55,11 @@ with st.form('form'):
         'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
     }
 
-    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", list(descricoes_linhas.keys()))
-
-    # Exibir descrição ao lado do radio button
-    if linha in descricoes_linhas:
-        st.write("Descrição:", descricoes_linhas[linha])
+    for linha, descricao in descricoes_linhas.items():
+        checkbox = st.checkbox(linha, key=linha)
+        st.write(descricao)
+        if checkbox:
+            st.write(f"Você selecionou a linha: {linha}")
 
     botao = st.form_submit_button('enviar') 
 
