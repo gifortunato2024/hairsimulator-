@@ -63,9 +63,12 @@ for linha, descricao in descricoes_linhas.items():
         selected_lines.append(linha)
 
 if st.form_submit_button('Enviar'):
-    st.write("Você selecionou as seguintes linhas:")
-    for linha in selected_lines:
-        st.write(linha)
+    if selected_lines:
+        st.write("Você selecionou as seguintes linhas:")
+        for linha in selected_lines:
+            st.write(linha)
+    else:
+        st.write("Nenhuma linha selecionada.")
 
 
 if botao: 
