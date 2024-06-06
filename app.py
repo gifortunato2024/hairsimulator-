@@ -62,9 +62,11 @@ for linha, descricao in descricoes_linhas.items():
     if checkbox:
         selected_lines.append(linha)
 
-  botao = st.form_submit_button('enviar') 
-
-if botao: 
+ if st.button('Enviar'):
+    st.write("Você selecionou as seguintes linhas:")
+    for linha in selected_lines:
+        st.write(linha)
+if st.button('Enviar'):
     st.write("Você selecionou as seguintes linhas:")
     for linha in selected_lines:
         st.write(linha)
