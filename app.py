@@ -32,7 +32,7 @@ def swap_faces(fake, user, i1=0, i2=0):
 
 @st.spinner('Gerando imagem...')
 def generate_image(tipo, cor, pele, genero):
-    prompt = f'a photo of a {genero_translation} with {cor_translation} {tipo_translation} hair and {pele_translation} skin, looking at the camera, Fujifilm X-T4, photography, canon, Fujifilm, realistic, 4k, 8k'
+    prompt = f'a photo of a {genero_translation[genero]} with {cor_translation[cor]} {tipo_translation[tipo]} hair and {pele_translation[pele]} skin, looking at the camera, Fujifilm X-T4, photography, canon, Fujifilm, realistic, 4k, 8k'
     user = Image.open('user.jpg')
     result_gen = api.img2img(images=[user], prompt=prompt,
                              negative_prompt='painting, sketches, drawing, cartoon, anime, deformed, malformed, ugly, worst quality, bad quality, disfigured, graphite, abstract glitch, text, mutated text',
