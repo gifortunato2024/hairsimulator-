@@ -38,8 +38,10 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-    st.subheader("Linhas L'Oréal Professionel")
-    st.image("Linhassite .jpg", width=400)
+    import streamlit as st
+
+   st.subheader("Linhas L'Oréal Professionel")
+   st.image("Linhassite .jpg", width=400)
 
 descricoes_linhas = {
     'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
@@ -64,7 +66,8 @@ for linha, descricao in descricoes_linhas.items():
 
 if selected_line:
     st.write("Você selecionou a linha:", selected_line)
-    if st.button('Enviar'):
+    botao = st.button('Enviar')
+    if botao:
         # Salvar resposta e prosseguir para o próximo passo
         # Implemente sua lógica aqui
         st.write("Resposta salva! Próximo passo...")
