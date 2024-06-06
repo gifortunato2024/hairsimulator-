@@ -14,7 +14,7 @@ st.image(foto, caption="Camila Cabello L'Oreal", width= 500)
 
 with st.form('form'):
     st.header("Tipo de cabelo")
-    st.image("Fotoloreal .jpg", width=300)
+    st.image("Fotoloreal .jpg", width=400)
     tipo_cabelo = st.radio("Qual o seu tipo de cabelo?",  ['1', '2A', '2B', '2C', '3A', '3B', '3C', '4A', '4B'],
                           horizontal=True)
     st.header("Cor do cabelo")
