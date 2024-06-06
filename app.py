@@ -62,14 +62,8 @@ for linha, descricao in descricoes_linhas.items():
     if checkbox:
         selected_lines.append(linha)
 
-if st.form_submit_button('Enviar'):
-    if selected_lines:
-        st.write("Você selecionou as seguintes linhas:")
-        for linha in selected_lines:
-            st.write(linha)
-    else:
-        st.write("Nenhuma linha selecionada.")
 
+botao = st.form_submit_button('enviar')
 
 if botao: 
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
