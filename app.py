@@ -38,8 +38,8 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-       st.subheader("Linhas L'Oréal Professionel")
-st.image("Linhassite .jpg", width=400)
+    st.subheader("Linhas L'Oréal Professionel")
+    st.image("Linhassite .jpg", width=400)
 
 descricoes_linhas = {
     'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
