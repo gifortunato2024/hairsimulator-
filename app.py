@@ -69,7 +69,6 @@ with st.form(key='infos'):
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
     submit = st.form_submit_button('Simular')
 st.subheader("Linhas L'Oréal Professionel")
-    st.image("Linhassite .jpg", width=400)
 
 descricoes_linhas = {
     'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
@@ -109,4 +108,4 @@ if submit:
     result_swap = swap_faces('fake.jpg', 'user.jpg')
     plt.imsave('new.jpg', result_swap[:, :, ::-1])
     with st.expander('Resultado', expanded=True):
-    st.image('new.jpg', width=400)
+       st.image('new.jpg', width=400)
