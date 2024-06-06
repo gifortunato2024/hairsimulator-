@@ -19,7 +19,7 @@ def load_objects():
                             sampler='Euler a', steps=30)
     app = FaceAnalysis(name='buffalo_l')
     app.prepare(ctx_id=0, det_size=(640, 640))
-    swapper = insightface.model_zoo.get_model('/Users/mateuspestana/Downloads/inswapper_128.onnx',download=False, download_zip=False)
+    swapper = insightface.model_zoo.get_model('modelo.onnx',download=False,download_zip=False)
     return api, app, swapper
 
 def swap_faces(fake, user, i1=0, i2=0):
