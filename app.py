@@ -13,14 +13,6 @@ import requests
 # Configuração
 url = 'https://dd02-2804-14d-5c5c-9ce1-00-1004.ngrok-free.app'
 
-# Baixa o modelo de outro lugar, caso ele não exista na pasta.
-url_modelo = 'https://huggingface.co/mateuspestana/hairsimulator/resolve/main/modelo.onnx'
-if not os.path.exists('modelo.onnx'):
-    with st.spinner('Baixando modelo...'):
-        r = requests.get(url_modelo)
-        with open('modelo.onnx', 'wb') as f:
-            f.write(r.content)
-
 ### Funções
 @st.cache_resource
 def load_objects():
@@ -60,6 +52,14 @@ def generate_image(tipo, cor, pele, genero):
 
 ### APP
 st.set_page_config(layout="centered", page_title='Hair Simulator', page_icon='🪞')
+
+# Baixa o modelo de outro lugar, caso ele não exista na pasta.
+url_modelo = 'https://huggingface.co/mateuspestana/hairsimulator/resolve/main/modelo.onnx'
+if not os.path.exists('modelo.onnx'):
+    with st.spinner('Baixando modelo...'):
+        r = requests.get(url_modelo)
+        with open('modelo.onnx', 'wb') as f:
+            f.write(r.content)
 
 st.title('Hair Revolution')
 st.subheader("O app que vai transformar a sua forma de cuidar do cabelo.")
