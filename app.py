@@ -38,30 +38,36 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-        st.subheader("Linhas L'Oréal Professionel")
-    st.image("Linhassite .jpg", width=400)
+       st.subheader("Linhas L'Oréal Professionel")
+st.image("Linhassite .jpg", width=400)
 
-    descricoes_linhas = {
-        'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
-        'Metal Detox': 'Proteção contra poluentes e impurezas.',
-        'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
-        'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
-        'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
-        'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
-        'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
-        'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
-        'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
-        'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
-        'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
-    }
+descricoes_linhas = {
+    'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
+    'Metal Detox': 'Proteção contra poluentes e impurezas.',
+    'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
+    'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
+    'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
+    'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
+    'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
+    'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
+    'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
+    'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
+    'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
+}
 
-    for linha, descricao in descricoes_linhas.items():
-        checkbox = st.checkbox(linha, key=linha)
-        st.write(descricao)
-        if checkbox:
-            st.write(f"Você selecionou a linha: {linha}")
+selected_lines = []
+for linha, descricao in descricoes_linhas.items():
+    checkbox = st.checkbox(linha, key=linha)
+    st.write(descricao)
+    if checkbox:
+        selected_lines.append(linha)
 
-    botao = st.form_submit_button('enviar') 
+botao = st.form_submit_button('enviar') 
+
+if botao: 
+    st.write("Você selecionou as seguintes linhas:")
+    for linha in selected_lines:
+        st.write(linha)
 
 if botao: 
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
