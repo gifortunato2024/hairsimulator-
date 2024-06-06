@@ -11,6 +11,14 @@ import numpy as np
 # Configuração
 url = 'https://dd02-2804-14d-5c5c-9ce1-00-1004.ngrok-free.app'
 
+# Baixa o modelo de outro lugar, caso ele não exista na pasta.
+url_modelo = 'https://huggingface.co/mateuspestana/hairsimulator/resolve/main/modelo.onnx'
+if not os.path.exists('modelo.onnx'):
+    with st.spinner('Baixando modelo...'):
+        r = requests.get(url_modelo)
+        with open('modelo.onnx', 'wb') as f:
+            f.write(r.content)
+
 ### Funções
 @st.cache_resource
 def load_objects():
@@ -56,7 +64,8 @@ st.subheader("O app que vai transformar a sua forma de cuidar do cabelo.")
 st.caption("Se você é um(a) amante da LÓreal professional esse é o seu site ideal")
 
 with st.form(key='infos'):
-    form1, form2, form3, form4, form5, form6 = st.columns(6)
+    form1, form2, form3 = st.columns(3)
+    form4, form5, form6 = st.columns(3)
     tipo = form1.selectbox('Tipo de cabelo', ['liso', 'ondulado', 'cacheado', 'crespo'])
     cor = form2.selectbox('Cor do cabelo', ['castanho claro', 'castanho escuro', 'loiro claro', 'loiro escuro', 'ruivo', 'cinza', 'preto', 'platinado', 'outro'])
     pele = form3.selectbox('Cor da pele', ['branca', 'morena', 'preta'])
