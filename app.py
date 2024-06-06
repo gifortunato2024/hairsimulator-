@@ -39,8 +39,7 @@ with st.form('form'):
     opções_cabelo = st.radio("Selecione as seguintes opções que o seu cabelo está aparentando", ['Ponta dupla', 'Frizz', 'Poroso', 'Queda', 'Quebra', 'Crescimento tardio', 'Caspa'],
                             horizontal=True) 
 
-    linha = st. header("Linhas L'Oréal professionnel")
-    st.image("Fotoslinhas.jpg", width=400)
+
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'], horizontal=True)
     
     botao = st.form_submit_button('enviar') 
