@@ -63,7 +63,7 @@ for linha, descricao in descricoes_linhas.items():
         selected_lines.append(linha)
 
 
-    botao = st.form_submit_button('enviar') 
+botao = st.form_submit_button('enviar') 
 
 if botao: 
     frase = f"uma foto de uma pessoa do genero {genero} com cabelo tipo {tipo_cabelo}, cor de cabelo {cor_cabelo} etc etc etc" 
