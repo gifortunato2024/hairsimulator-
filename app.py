@@ -103,8 +103,12 @@ genero_translation = {'homem': 'man', 'mulher': 'woman'}
 if submit:
     api, app, swapper = load_objects()
     try:
-        with open(f'user.jpg', 'wb') as f:
-            f.write(foto.read())
+        # with open(f'user.jpg', 'wb') as f:
+        #     f.write(foto.read())
+        img = Image.open(foto)
+        img = img.resize((img.width // 3, img.height // 3))
+        img.save('user.jpg')
+        
     except:
         st.error('Erro ao processar foto. Envie novamente.')
 
