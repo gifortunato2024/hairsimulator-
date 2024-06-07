@@ -106,7 +106,7 @@ if submit:
         # with open(f'user.jpg', 'wb') as f:
         #     f.write(foto.read())
         img = Image.open(foto)
-        img = img.resize((img.width // 3, img.height // 3))
+        img = img.resize((img.width // 4, img.height // 4))
         img.save('user.jpg')
         
     except:
