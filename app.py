@@ -107,6 +107,8 @@ if submit:
         #     f.write(foto.read())
         img = Image.open(foto)
         img = img.resize((img.width // 4, img.height // 4))
+        if foto.name[-3:] == 'png':
+            img = img.convert('RGB')
         img.save('user.jpg')
         
     except:
