@@ -80,9 +80,8 @@ with st.form(key='infos'):
     st.divider()
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=680)
-    st.write ('st.markdown (''':orange[Absolut Repair Molecular]''')('Reparação profunda e reconstrução para cabelos danificados.))
-    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+    st.markdown('**:orange[Absolut Repair Molecular]** Reparação profunda e reconstrução para cabelos danificados.')
+
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
     
 # foto = st.camera_input('Tire uma foto')
