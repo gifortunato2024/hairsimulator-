@@ -81,26 +81,23 @@ with st.form(key='infos'):
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=680)
     st.markdown('**:orange[Absolut Repair Molecular:]** Reparação profunda e reconstrução para cabelos danificados.')
-
+    st.markdown('**:orange[Metal Detox:]** Proteção contra poluentes e impurezas.')
+    st.markdown('**:orange[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
+    st.markdown('**:orange[Curl Expression:]** Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.')
+    st.markdown('**:orange[Absolut Repair:]** Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.')
+    st.markdown('**:orange[Choma Creme:]** Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.')
+    st.markdown('**:orange[Fluidfier:]** Controle de frizz e definição de cabelos lisos.')
+    st.markdown('**:orange[Pro Longer:]** Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas..')
+    st.markdown('**:orange[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
+    st.markdown('**:orange[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
+    st.markdown('**:orange[Nutrifier:]** Nutrição intensa para cabelos secos e desidratados.')
+    
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
     
 # foto = st.camera_input('Tire uma foto')
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
     submit = st.form_submit_button('Simular')
     
-    descricoes_linhas = {
-        'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
-        'Metal Detox': 'Proteção contra poluentes e impurezas.',
-        'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
-        'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
-        'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
-        'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
-        'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
-        'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
-        'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
-        'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
-        'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
-}
 # Mapeamento das opções de idioma
 tipo_translation = {'liso': 'straight', 'ondulado': 'wavy', 'cacheado': 'curly', 'crespo': 'coily'}
 cor_translation = {'castanho claro': 'light brown', 'castanho escuro': 'dark brown', 'loiro claro': 'light blonde', 'loiro escuro': 'dark blonde', 'ruivo': 'red', 'cinza': 'gray', 'preto': 'black', 'platinado': 'platinum', 'outro': 'same as the original picture'}
