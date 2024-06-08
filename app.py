@@ -63,9 +63,10 @@ if not os.path.exists('modelo.onnx'):
 
 st.title('Hair Revolution')
 st.subheader("O app que vai transformar a sua forma de cuidar do cabelo.")
-st.caption("Se você é um(a) amante da LÓreal professional esse é o seu site ideal")
+st.subheader("Se você é um(a) amante da LÓreal professional esse é o seu site ideal")
 
 with st.form(key='infos'):
+    st.caption("Preencha esse formulario de acordo com as características do seu cabelo")
     st.image("Fotoloreal .jpg", width=400)
     form1, form2, form3 = st.columns(3)
     form4, form5, form6 = st.columns(3)
