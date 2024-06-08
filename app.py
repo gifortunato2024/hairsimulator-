@@ -140,5 +140,3 @@ if submit:
     plt.imsave('new.jpg', result_swap[:, :, ::-1])
     with st.expander('Resultado', expanded=True):
        st.image('new.jpg', width=400)
-
-Levando em conta apenas a parte do formulário, eu quero adicionar uma pequena foto ao lado da descrição de cada linha
