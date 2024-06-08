@@ -80,7 +80,7 @@ with st.form(key='infos'):
     st.divider()
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=680)
-    st.markdown('**:orange[Absolut Repair Molecular:]** Reparação profunda e reconstrução para cabelos danificados.')
+    st.markdown('**:grey[Absolut Repair Molecular:]** Reparação profunda e reconstrução para cabelos danificados.')
     st.markdown('**:orange[Metal Detox:]** Proteção contra poluentes e impurezas.')
     st.markdown('**:blue[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
     st.markdown('**:violet[Curl Expression:]** Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.')
