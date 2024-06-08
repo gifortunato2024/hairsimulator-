@@ -75,6 +75,7 @@ with st.form(key='infos'):
     genero = form4.selectbox('Gênero', ['homem', 'mulher'])
     procedimentos = form5.multiselect('Procedimentos realizados', ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos'])
     características = form6.selectbox('Característica do seu cabelo', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
+    st.divider()
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=400)
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
