@@ -83,18 +83,18 @@ with st.form(key='infos'):
     
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=400)
-descricoes_linhas = {
-    'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
-    'Metal Detox': 'Proteção contra poluentes e impurezas.',
-    'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
-    'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
-    'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
-    'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
-    'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
-    'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
-    'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
-    'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
-    'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
+    descricoes_linhas = {
+        'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
+        'Metal Detox': 'Proteção contra poluentes e impurezas.',
+        'Scalp Advanced': 'Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.',
+        'Curl Expression': 'Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.',
+        'Absolut Repair': 'Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.',
+        'Choma Creme': 'Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.',
+        'Fluidfier': 'Controle de frizz e definição de cabelos lisos.',
+        'Pro Longer': 'Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.',
+        'Blondifier': 'Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.',
+        'Inforce': 'Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.',
+        'Nutrifier': 'Nutrição intensa para cabelos secos e desidratados.'
 }
 # Mapeamento das opções de idioma
 tipo_translation = {'liso': 'straight', 'ondulado': 'wavy', 'cacheado': 'curly', 'crespo': 'coily'}
