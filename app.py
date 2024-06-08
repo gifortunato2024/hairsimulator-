@@ -74,7 +74,7 @@ with st.form(key='infos'):
     genero = form4.selectbox('Gênero', ['homem', 'mulher'])
     procedimentos = form5.multiselect('Procedimentos realizados', ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos'])
     características = form6.selectbox('Característica do seu cabelo', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
-    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
+    linha = st.subheader("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
     
 # foto = st.camera_input('Tire uma foto')
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
