@@ -1,4 +1,4 @@
-O código está assim: import streamlit as st
+import streamlit as st
 import matplotlib.pyplot as plt
 import webuiapi
 from PIL import Image
