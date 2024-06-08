@@ -87,7 +87,7 @@ with st.form(key='infos'):
     st.markdown('**:orange[Absolut Repair:]** Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.')
     st.markdown('**:orange[Choma Creme:]** Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.')
     st.markdown('**:orange[Fluidfier:]** Controle de frizz e definição de cabelos lisos.')
-    st.markdown('**:orange[Pro Longer:]** Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas..')
+    st.markdown('**:red[Pro Longer:]** Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas..')
     st.markdown('**:violet[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
     st.markdown('**:orange[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
     st.markdown('**:orange[Nutrifier:]** Nutrição intensa para cabelos secos e desidratados.')
