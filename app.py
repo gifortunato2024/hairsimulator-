@@ -66,7 +66,7 @@ st.subheader("O app que vai transformar a sua forma de cuidar do cabelo.")
 st.subheader("Se você é um(a) amante da LÓreal professional esse é o seu site ideal")
 
 with st.form(key='infos'):
-    st.markdown(''':blue-background[Preencha esse formulário de acordo com as características do seu cabelo] text.''')
+    st.markdown(''':blue-background[Preencha esse formulário de acordo com as características do seu cabelo]''')
     st.image("Fotoloreal .jpg", width=400)
     form1, form2, form3 = st.columns(3)
     form4, form5, form6 = st.columns(3)
