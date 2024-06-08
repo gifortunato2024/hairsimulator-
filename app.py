@@ -80,28 +80,33 @@ with st.form(key='infos'):
     st.divider()
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=680)
-    st.markdown('**:blue[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
-    st.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
-    st.markdown('**:grey[Metal Detox:]** Proteção contra poluentes e impurezas.')
-    st.markdown('**:violet[Curl Expression:]** Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.')
-    st.markdown('**:orange[Absolut Repair:]** Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.')
-    st.markdown('**:orange[Choma Creme:]** Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.')
-    st.markdown('**:orange[Fluidfier:]** Controle de frizz e definição de cabelos lisos.')
-    st.markdown('**:red[Pro Longer:]** Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas..')
-    st.markdown('**:violet[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
-    st.markdown('**:red[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
-    st.markdown('**:orange[Nutrifier:]** Nutrição intensa para cabelos secos e desidratados.')
-
     
-    image_path = 'Linhassite .jpg'
-    col1, col2 = st.columns([1, 5])  # Define a proporção das colunas
-
-    col1.image(image_path, width=80)  # Ajuste o tamanho da imagem conforme necessário
-
-    col2.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
+    # Definindo o caminho das imagens para cada linha
+    linhas = [
+        {"nome": "Scalp Advanced", "desc": "Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.", "imagem": "Linhassite .jpg"},
+        {"nome": "Absolut Repair Molecular", "desc": "Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.", "imagem": "Linhassite .jpg"},
+        {"nome": "Metal Detox", "desc": "Proteção contra poluentes e impurezas.", "imagem": "Linhassite .jpg"},
+        {"nome": "Curl Expression", "desc": "Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.", "imagem": "Linhassite .jpg"},
+        {"nome": "Absolut Repair", "desc": "Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.", "imagem": "Linhassite .jpg"},
+        {"nome": "Choma Creme", "desc": "Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.", "imagem": "Linhassite .jpg"},
+        {"nome": "Fluidfier", "desc": "Controle de frizz e definição de cabelos lisos.", "imagem": "Linhassite .jpg"},
+        {"nome": "Pro Longer", "desc": "Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas.", "imagem": "Linhassite .jpg"},
+        {"nome": "Blondifier", "desc": "Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.", "imagem": "Linhassite .jpg"},
+        {"nome": "Inforce", "desc": "Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.", "imagem": "Linhassite .jpg"},
+        {"nome": "Nutrifier", "desc": "Nutrição intensa para cabelos secos e desidratados.", "imagem": "Linhassite .jpg"},
+    ]
     
-    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
+    for linha in linhas:
+        col1, col2 = st.columns([1, 5])
+        with col1:
+            st.image(linha["imagem"], width=80)  # Ajuste o tamanho conforme necessário
+        with col2:
+            st.markdown(f'**:{linha["nome"].split()[0].lower()}[{linha["nome"]}:]** {linha["desc"]}')
+
+    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", [linha["nome"] for linha in linhas])
     
+    foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
+    submit = st.form_submit_button('Simular')
 # foto = st.camera_input('Tire uma foto')
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
     submit = st.form_submit_button('Simular')
