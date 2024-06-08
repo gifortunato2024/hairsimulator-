@@ -80,8 +80,8 @@ with st.form(key='infos'):
 # foto = st.camera_input('Tire uma foto')
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
     submit = st.form_submit_button('Simular')
-st.subheader("Linhas L'Oréal Professionel")
-
+st.header("Linhas L'Oréal Professionel")
+st.image("Linhassite .jpg", width=400)
 descricoes_linhas = {
     'Absolut Repair Molecular': 'Reparação profunda e reconstrução para cabelos danificados.',
     'Metal Detox': 'Proteção contra poluentes e impurezas.',
