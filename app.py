@@ -89,7 +89,7 @@ with st.form(key='infos'):
     st.markdown('**:orange[Fluidfier:]** Controle de frizz e definição de cabelos lisos.')
     st.markdown('**:red[Pro Longer:]** Cuidados para cabelos mais longos, fortalecendo e protegendo as pontas..')
     st.markdown('**:violet[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
-    st.markdown('**:orange[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
+    st.markdown('**:red[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
     st.markdown('**:orange[Nutrifier:]** Nutrição intensa para cabelos secos e desidratados.')
     
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
