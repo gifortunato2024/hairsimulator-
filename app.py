@@ -81,7 +81,7 @@ with st.form(key='infos'):
     st.header("Linhas L'Oréal Professionel")
     st.image("Linhassite .jpg", width=680)
     st.markdown('**:blue[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
-    st.markdown('**:grey[Absolut Repair Molecular:]** Reparação profunda e reconstrução para cabelos danificados.')
+    st.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
     st.markdown('**:grey[Metal Detox:]** Proteção contra poluentes e impurezas.')
     st.markdown('**:violet[Curl Expression:]** Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.')
     st.markdown('**:orange[Absolut Repair:]** Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.')
@@ -91,6 +91,14 @@ with st.form(key='infos'):
     st.markdown('**:violet[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
     st.markdown('**:red[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
     st.markdown('**:orange[Nutrifier:]** Nutrição intensa para cabelos secos e desidratados.')
+
+    
+    image_path = 'Linhassite .jpg'
+    col1, col2 = st.columns([1, 5])  # Define a proporção das colunas
+
+    col1.image(image_path, width=80)  # Ajuste o tamanho da imagem conforme necessário
+
+    col2.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
     
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
     
