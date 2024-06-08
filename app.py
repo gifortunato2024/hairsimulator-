@@ -79,7 +79,7 @@ with st.form(key='infos'):
     
     st.divider()
     st.header("Linhas L'Oréal Professionel")
-    st.image("Linhassite .jpg", width=700)
+    st.image("Linhassite .jpg", width=680)
     st.markdown('''
     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
     :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
