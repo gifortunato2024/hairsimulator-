@@ -143,11 +143,7 @@ if submit:
         feedback += "Recomendamos o uso da linha Blondifier para cabelos loiros. Deixará seu cabelo mais brilhante, nutrido e brilhoso"
     if "Tintura" in procedimentos:
         feedback += "Recomendamos o uso da linha Vitamino Color para auxiliar na durabilidade da cor."
-    if "Botox" in procedimentos:
-        feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
-    if "Progressiva" in procedimentos:
-        feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
-    if "Outros alisamentos" in procedimentos:
+    if "Botox" in procedimentos or "Progressiva" in procedimentos or "Outros alisamentos" in procedimentos:
         feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
 
     if características == 'Raiz oleosa/Cabelo oleoso':
