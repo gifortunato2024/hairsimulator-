@@ -69,7 +69,7 @@ st.subheader("Se você é um(a) amante da LÓreal professional esse é o seu sit
 
 with st.form(key='infos'):
     st.markdown(''':blue-background[Preencha esse formulário de acordo com as características do seu cabelo]''')
-    st.image("Linhasfinal.jpeg", width=400)
+    st.image("Fotoloreal.jpg", width=400)
     form1, form2, form3 = st.columns(3)
     form4, form5, form6, form7 = st.columns(4)
     tipo = form1.selectbox('Tipo de cabelo', ['liso', 'ondulado', 'cacheado', 'crespo'])
