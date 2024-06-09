@@ -147,14 +147,22 @@ if submit:
         feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
 
     if características == 'Raiz oleosa/Cabelo oleoso':
-        feedback += "Recomendamos o uso da linha Scalp Advanced para equilibar a oleosidade do cabelo."
+        feedback += " Recomendamos o uso da linha Scalp Advanced Anti-Oleosidade para equilibar a oleosidade do cabelo."
     if características == 'Ponta seca/Cabelo seco':
-        feedback += "Recomendamos a linha Absolut Repair para devolver saúde e brilho aos fios."
+        feedback += " Recomendamos a linha Absolut Repair para devolver saúde e brilho aos fios."
     if características == 'Normal':
         feedback += ""
 
+    if "Queda" in opções:
+        feedback += "Recomendamos o uso das linhas Aminexil Advanced e Serioxyl Advanced para estimular a densidade e combate a queda capilar"
+    if "Caspa" in opções:
+        feedback += "Recomendamos o uso da linha Scalp Advanced Anti-Caspa para caspas secas e oleosas."
+    if "Frizz" in opções:
+        feedback += "Recomendamos o uso da linha Liss Unlimited para reduzir o frizz"
+    if "Crescimento" in opções or "Ponta dupla" in opções:
+        feedback += " Recomendamos o uso da linha Pro Longer para minimização de pontas duplas, para fios mais longos, densos e brilhosos."
+    if "Transição capilar" in opções:
+        feedback += "Recomendamos a linha Curl Expression para hidratar e definir cachos."
+
     st.write("Feedback:")
     st.write(feedback)
-
-    # col1, col2 = st.columns(2)
-    # col1.image​⬤
