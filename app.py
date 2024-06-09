@@ -168,6 +168,10 @@ if submit:
         feedback += "Recomendamos a linha Curl Expression para hidratar e definir cachos."
 
     st.write(feedback)
+    
+    feedback_linha = feedback_linha_escolhida(linha)
+    st.write(f"### Feedback da linha escolhida: {linha}")
+    st.write(feedback_linha)
 
 def feedback_linha_escolhida(linha):
     feedback = ""
