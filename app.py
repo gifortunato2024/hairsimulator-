@@ -77,7 +77,7 @@ with st.form(key='infos'):
     pele = form3.selectbox('Cor da pele', ['branca', 'morena', 'preta'])
     genero = form4.selectbox('Gênero', ['homem', 'mulher'])
     procedimentos = form5.multiselect('Procedimentos realizados', ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos'])
-    características = form6.selectbox('Característica do seu cabelo', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
+    características = form6.selectbox('Característica', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
     opções = form7.multiselect('Problemas', ['Queda', 'Caspa', 'Frizz', 'Crescimento', 'Ponta dupla', 'Transição capilar'])
     
     st.divider()
