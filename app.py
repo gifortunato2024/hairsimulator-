@@ -12,37 +12,6 @@ import requests
 from streamlit.components.v1 import html
 import base64
 
-# Configuração da página
-st.set_page_config(layout="centered", page_title='Hair Simulator', page_icon='🪞')
-
-def set_page_background(image_path):
-    """
-    Insere CSS personalizado na página para definir uma imagem de fundo a partir de um caminho local.
-    
-    Args:
-    image_path (str): Caminho para o arquivo de imagem a ser usado como fundo.
-    """
-    with open(image_path, "rb") as image_file:
-        base64_image = base64.b64encode(image_file.read()).decode()
-        
-    css = f"""
-    <style>
-    body {{
-        background-image: url("data:image/png;base64,{base64_image}");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }}
-    </style>
-    """
-    st.markdown(css, unsafe_allow_html=True)
-
-# Caminho para a imagem de fundo local
-background_image_path = "fundo.png"  # Certifique-se de que este é o caminho relativo correto
-
-# Insere o CSS na página com a imagem de fundo
-set_page_background(background_image_path)
-
 # Configuração
 url = 'https://dd02-2804-14d-5c5c-9ce1-00-1004.ngrok-free.app'
 
