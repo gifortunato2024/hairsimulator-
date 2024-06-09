@@ -72,12 +72,14 @@ with st.form(key='infos'):
     st.image("Fotoloreal .jpg", width=400)
     form1, form2, form3 = st.columns(3)
     form4, form5, form6 = st.columns(3)
+    form7 = st.columns(1)
     tipo = form1.selectbox('Tipo de cabelo', ['liso', 'ondulado', 'cacheado', 'crespo'])
     cor = form2.selectbox('Cor do cabelo', ['castanho claro', 'castanho escuro', 'loiro claro', 'loiro escuro', 'ruivo', 'cinza', 'preto', 'platinado', 'outro'])
     pele = form3.selectbox('Cor da pele', ['branca', 'morena', 'preta'])
     genero = form4.selectbox('Gênero', ['homem', 'mulher'])
     procedimentos = form5.multiselect('Procedimentos realizados', ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos'])
     características = form6.selectbox('Característica do seu cabelo', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
+    opções = form7.multiselect('Problemas', ['Queda', 'Caspa', 'Frizz', 'Crescimento', 'Ponta dupla', 'Transição capilar'])
     
     st.divider()
     st.header("Linhas L'Oréal Professionel")
@@ -135,3 +137,33 @@ if submit:
     plt.imsave('new.jpg', result_swap[:, :, ::-1])
     with st.expander('Resultado', expanded=True):
        st.image('new.jpg', width=400)
+
+    # Feedback baseado em procedimentos e características selecionadas
+    feedback = ""
+    if "Descoloração" in procedimentos:
+        feedback += "Recomendamos o uso da linha Blondifier para cabelos loiros. Deixará seu cabelo mais brilhante, nutrido e brilhoso"
+    if "Tintura" in procedimentos:
+        feedback += "Recomendamos o uso da linha Vitamino Color para auxiliar na durabilidade da cor."
+    if "Botox" in procedimentos:
+        feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
+    if "Progressiva" in procedimentos:
+        feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
+    if "Outros alisamentos" in procedimentos:
+        feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
+
+    if características == 'Raiz oleosa':
+        feedback += "Se sua raiz é oleosa, evite aplicar condicionador na raiz e escolha produtos específicos para controle de oleosidade."
+    if características == 'Ponta seca':
+        feedback += "Cabelos com pontas secas podem se beneficiar de tratamentos de hidratação intensa e corte regular para remover pontas duplas."
+    if características == 'Seco':
+        feedback += "Cabelos secos precisam de hidratação regular. Use máscaras capilares e evite o uso excessivo de calor."
+    if características == 'Oleoso':
+        feedback += "Use produtos leves e evite o excesso de produtos que podem pesar nos fios e aumentar a oleosidade."
+    if características == 'Normal':
+        feedback += "Cabelos normais podem se beneficiar de uma rotina de cuidados equilibrada, com produtos de limpeza suaves e hidratação regular."
+
+    st.write("Feedback:")
+    st.write(feedback)
+
+    # col1, col2 = st.columns(2)
+    # col1.image​⬤
