@@ -77,7 +77,7 @@ with st.form(key='infos'):
     pele = form3.selectbox('Cor da pele', ['branca', 'morena', 'preta'])
     genero = form4.selectbox('Gênero', ['homem', 'mulher'])
     procedimentos = form5.multiselect('Procedimentos realizados', ['Descoloração', 'Tintura', 'Botox', 'Progressiva', 'Outros alisamentos'])
-    características = form6.selectbox('Característica', ['Raiz oleosa', 'Ponta seca', 'Seco', 'Oleoso', 'Normal'])
+    características = form6.selectbox('Característica', ['Raiz oleosa/Cabelo oleoso', 'Ponta seca/Cabelo seco', 'Normal'])
     opções = form7.multiselect('Problemas', ['Queda', 'Caspa', 'Frizz', 'Crescimento', 'Ponta dupla', 'Transição capilar'])
     
     st.divider()
@@ -150,16 +150,12 @@ if submit:
     if "Outros alisamentos" in procedimentos:
         feedback += "Recomendamos a linha NutriOil para nutrição de cabelos quimicamente tratados."
 
-    if características == 'Raiz oleosa':
-        feedback += "Se sua raiz é oleosa, evite aplicar condicionador na raiz e escolha produtos específicos para controle de oleosidade."
-    if características == 'Ponta seca':
-        feedback += "Cabelos com pontas secas podem se beneficiar de tratamentos de hidratação intensa e corte regular para remover pontas duplas."
-    if características == 'Seco':
-        feedback += "Cabelos secos precisam de hidratação regular. Use máscaras capilares e evite o uso excessivo de calor."
-    if características == 'Oleoso':
-        feedback += "Use produtos leves e evite o excesso de produtos que podem pesar nos fios e aumentar a oleosidade."
+    if características == 'Raiz oleosa/Cabelo oleoso':
+        feedback += "Recomendamos o uso da linha Scalp Advanced para equilibar a oleosidade do cabelo."
+    if características == 'Ponta seca/Cabelo seco':
+        feedback += "Recomendamos a linha Absolut Repair para devolver saúde e brilho aos fios."
     if características == 'Normal':
-        feedback += "Cabelos normais podem se beneficiar de uma rotina de cuidados equilibrada, com produtos de limpeza suaves e hidratação regular."
+        feedback += ""
 
     st.write("Feedback:")
     st.write(feedback)
