@@ -82,7 +82,7 @@ with st.form(key='infos'):
     
     st.divider()
     st.header("Linhas L'Oréal Professionel")
-    st.image("fotolinhas.jpeg", width=680)
+    st.image("Linhasfinal.jpeg", width=680)
     st.markdown('**:blue[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
     st.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
     st.markdown('**:grey[Metal Detox:]** Proteção contra poluentes e impurezas.')
