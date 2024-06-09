@@ -32,8 +32,8 @@ def set_page_background(image_path):
     }}
     </style>
     """
-    html(css)
-
+    st.markdown(css, unsafe_allow_html=True)
+    
 # Caminho para a imagem de fundo local
 background_image_path = "fundo.png"  # Certifique-se de que este é o caminho relativo correto
 
