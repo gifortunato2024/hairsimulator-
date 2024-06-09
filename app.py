@@ -167,7 +167,6 @@ if submit:
     if "Transição capilar" in opções:
         feedback += "Recomendamos a linha Curl Expression para hidratar e definir cachos."
 
-    st.header("Feedback:")
     st.write(feedback)
 
 def feedback_linha_escolhida(linha):
