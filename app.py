@@ -12,6 +12,9 @@ import requests
 from streamlit.components.v1 import html
 import base64
 
+# Configuração da página
+st.set_page_config(layout="centered", page_title='Hair Simulator', page_icon='🪞')
+
 def set_page_background(image_path):
     """
     Insere CSS personalizado na página para definir uma imagem de fundo a partir de um caminho local.
@@ -33,7 +36,7 @@ def set_page_background(image_path):
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
-    
+
 # Caminho para a imagem de fundo local
 background_image_path = "fundo.png"  # Certifique-se de que este é o caminho relativo correto
 
