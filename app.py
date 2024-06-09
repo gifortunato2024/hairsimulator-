@@ -97,8 +97,8 @@ with st.form(key='infos'):
     st.markdown('**:orange[NutriOil:]** Nutrição intensa para cabelos secos e desidratados.')
     st.markdown('**:red[LissUnlimited:]** Recuperação e reconstrução das fibras capilares, deixando os cabelos limpos, nutridos, com brilho, maciez e sem frizz - proteção extra contra a umidade.')
 
-    
-    linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier','LissUnlimited', 'Vitamino Color'])
+    st.subheader("Escolha a linha que você quer ver o resultado no seu cabelo")
+    linha = st.radio("", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier','LissUnlimited', 'Vitamino Color'])
     
 # foto = st.camera_input('Tire uma foto')
     foto = st.file_uploader('Escolha uma foto', type=['jpg', 'png', 'jpeg'])
@@ -141,6 +141,7 @@ if submit:
 
     # Feedback baseado em procedimentos e características selecionadas
     feedback = ""
+    st.header("Feedback")
     if "Descoloração" in procedimentos:
         feedback += "Recomendamos o uso da linha Blondifier para cabelos loiros. Deixará seu cabelo mais brilhante, nutrido e brilhoso"
     if "Tintura" in procedimentos:
