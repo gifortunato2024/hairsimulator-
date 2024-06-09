@@ -86,6 +86,7 @@ with st.form(key='infos'):
     st.markdown('**:blue[Scalp Advanced:]** Cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade.')
     st.markdown('**:grey[Absolut Repair Molecular:]** Ideal para todos os tipos de cabelo danificados: Garante reconstrução, cabelos mais fortes e nutridos.')
     st.markdown('**:grey[Metal Detox:]** Proteção contra poluentes e impurezas.')
+    st.markdown('**:rainbow[Vitamino Color:]** Ideal para cabelos com coloração e mechas. Permite que o cabelo foque com um aspecto de salão e a coloração blindada por mais tempo.')
     st.markdown('**:violet[Curl Expression:]** Cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz.')
     st.markdown('**:orange[Absolut Repair:]** Reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho.')
     st.markdown('**:blue[Choma Creme:]** Tratamento para cabelos coloridos, protegendo a cor e prolongando a intensidade.')
@@ -94,6 +95,7 @@ with st.form(key='infos'):
     st.markdown('**:violet[Blondifier:]** Cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho.')
     st.markdown('**:red[Inforce:]** Fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços.')
     st.markdown('**:orange[NutriOil:]** Nutrição intensa para cabelos secos e desidratados.')
+    st.markdown('**:red[LissUnlimited:]** Recuperação e reconstrução das fibras capilares, deixando os cabelos limpos, nutridos, com brilho, maciez e sem frizz - proteção extra contra a umidade.')
 
     
     linha = st.radio("Escolha a linha que você quer ver o resultado no seu cabelo", ['Absolut Repair Molecular', 'Metal Detox', 'Scalp Advanced', 'Curl Expression', 'Absolut Repair', 'Choma Creme', 'Fluidfier', 'Pro Longer', 'Blondifier', 'Inforce', 'Nutrifier'])
