@@ -147,18 +147,18 @@ def feedback_linha_escolhida(linha):
     elif linha == 'Fluidfier':
         feedback = "A linha Fluidfier oferece controle de frizz e definição para cabelos lisos."
         st.image("ARM.jpeg", width=300)
-        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
-        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Fluidifier", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/fluidfier", label="Saiba Mais no site oficial")
     elif linha == 'Pro Longer':
         feedback = "A linha Pro Longer oferece cuidados para cabelos mais longos, fortalecendo e protegendo as pontas."
         st.image("ARM.jpeg", width=300)
-        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Pro%20Longer", label="Comprar", icon="🛍️")
         st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Blondifier':
         feedback = "A linha Blondifier oferece cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho."
         st.image("ARM.jpeg", width=300)
-        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
-        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Blondifier", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/blondifier", label="Saiba Mais no site oficial")
     elif linha == 'Inforce':
         feedback = "A linha Inforce oferece fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços."
         st.image("ARM.jpeg", width=300)
