@@ -109,7 +109,36 @@ tipo_translation = {'liso': 'straight', 'ondulado': 'wavy', 'cacheado': 'curly',
 cor_translation = {'castanho claro': 'light brown', 'castanho escuro': 'dark brown', 'loiro claro': 'light blonde', 'loiro escuro': 'dark blonde', 'ruivo': 'red', 'cinza': 'gray', 'preto': 'black', 'platinado': 'platinum', 'outro': 'same as the original picture'}
 pele_translation = {'branca': 'white', 'morena': 'tan', 'preta': 'black'}
 genero_translation = {'homem': 'man', 'mulher': 'woman'}
-    
+
+def feedback_linha_escolhida(linha):
+    feedback = ""
+
+    # Adicione aqui os feedbacks para cada linha
+    if linha == 'Absolut Repair Molecular':
+        feedback = "A linha Absolut Repair Molecular é ideal para cabelos danificados. Ela garante reconstrução, cabelos mais fortes e nutridos."
+    elif linha == 'Metal Detox':
+        feedback = "A linha Metal Detox oferece proteção contra poluentes e impurezas, mantendo seu cabelo limpo e saudável."
+    elif linha == 'Scalp Advanced':
+        feedback = "A linha Scalp Advanced oferece cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade."
+    elif linha == 'Curl Expression':
+        feedback = "A linha Curl Expression proporciona cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz."
+    elif linha == 'Absolut Repair':
+        feedback = "A linha Absolut Repair oferece reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho."
+    elif linha == 'Choma Creme':
+        feedback = "A linha Choma Creme é um tratamento para cabelos coloridos, protegendo a cor e prolongando sua intensidade."
+    elif linha == 'Fluidfier':
+        feedback = "A linha Fluidfier oferece controle de frizz e definição para cabelos lisos."
+    elif linha == 'Pro Longer':
+        feedback = "A linha Pro Longer oferece cuidados para cabelos mais longos, fortalecendo e protegendo as pontas."
+    elif linha == 'Blondifier':
+        feedback = "A linha Blondifier oferece cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho."
+    elif linha == 'Inforce':
+        feedback = "A linha Inforce oferece fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços."
+    elif linha == 'NutriOil':
+        feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
+
+    return feedback
+
 if submit:
     api, app, swapper = load_objects()
     try:
@@ -172,35 +201,6 @@ if submit:
     feedback_linha = feedback_linha_escolhida(linha)
     st.write(f"### Feedback da linha escolhida: {linha}")
     st.write(feedback_linha)
-
-def feedback_linha_escolhida(linha):
-    feedback = ""
-
-    # Adicione aqui os feedbacks para cada linha
-    if linha == 'Absolut Repair Molecular':
-        feedback = "A linha Absolut Repair Molecular é ideal para cabelos danificados. Ela garante reconstrução, cabelos mais fortes e nutridos."
-    elif linha == 'Metal Detox':
-        feedback = "A linha Metal Detox oferece proteção contra poluentes e impurezas, mantendo seu cabelo limpo e saudável."
-    elif linha == 'Scalp Advanced':
-        feedback = "A linha Scalp Advanced oferece cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade."
-    elif linha == 'Curl Expression':
-        feedback = "A linha Curl Expression proporciona cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz."
-    elif linha == 'Absolut Repair':
-        feedback = "A linha Absolut Repair oferece reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho."
-    elif linha == 'Choma Creme':
-        feedback = "A linha Choma Creme é um tratamento para cabelos coloridos, protegendo a cor e prolongando sua intensidade."
-    elif linha == 'Fluidfier':
-        feedback = "A linha Fluidfier oferece controle de frizz e definição para cabelos lisos."
-    elif linha == 'Pro Longer':
-        feedback = "A linha Pro Longer oferece cuidados para cabelos mais longos, fortalecendo e protegendo as pontas."
-    elif linha == 'Blondifier':
-        feedback = "A linha Blondifier oferece cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho."
-    elif linha == 'Inforce':
-        feedback = "A linha Inforce oferece fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços."
-    elif linha == 'NutriOil':
-        feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
-
-    return feedback
 
 # Exemplo de uso da função
 linha_escolhida = 'Absolut Repair Molecular'
