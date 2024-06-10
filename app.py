@@ -118,6 +118,7 @@ def feedback_linha_escolhida(linha):
         feedback = "A linha Absolut Repair Molecular é ideal para cabelos danificados. Ela garante reconstrução, cabelos mais fortes e nutridos."
         st.image("ARM.jpeg", width=300)
         st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Metal Detox':
         feedback = "A linha Metal Detox oferece proteção contra poluentes e impurezas, mantendo seu cabelo limpo e saudável."
     elif linha == 'Scalp Advanced':
