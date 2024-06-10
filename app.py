@@ -116,7 +116,7 @@ def feedback_linha_escolhida(linha):
     # Adicione aqui os feedbacks para cada linha
     if linha == 'Absolut Repair Molecular':
         feedback = "A linha Absolut Repair Molecular é ideal para cabelos danificados. Ela garante reconstrução, cabelos mais fortes e nutridos."
-        image_path = ""
+        image_path = "ARM.jpeg"
     elif linha == 'Metal Detox':
         feedback = "A linha Metal Detox oferece proteção contra poluentes e impurezas, mantendo seu cabelo limpo e saudável."
     elif linha == 'Scalp Advanced':
