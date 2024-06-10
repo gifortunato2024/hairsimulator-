@@ -121,24 +121,54 @@ def feedback_linha_escolhida(linha):
         st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Metal Detox':
         feedback = "A linha Metal Detox oferece proteção contra poluentes e impurezas, mantendo seu cabelo limpo e saudável."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/procurar?q=Metal%20detox&start=0&sz=12", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/metal-detox", label="Saiba Mais no site oficial")
     elif linha == 'Scalp Advanced':
         feedback = "A linha Scalp Advanced oferece cuidados avançados para o couro cabeludo, combatendo problemas como caspa e oleosidade."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Scalp%20Advanced", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/scalp-advanced", label="Saiba Mais no site oficial")
     elif linha == 'Curl Expression':
         feedback = "A linha Curl Expression proporciona cuidados especiais para cabelos cacheados, proporcionando definição e controle de frizz."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Curl%20Expression", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/curl-expression", label="Saiba Mais no site oficial")
     elif linha == 'Absolut Repair':
         feedback = "A linha Absolut Repair oferece reparação e nutrição para cabelos danificados, restaurando a saúde e o brilho."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Absolut%20Repair", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/absolut-repair-gold-quinoa-protein", label="Saiba Mais no site oficial")
     elif linha == 'Choma Creme':
         feedback = "A linha Choma Creme é um tratamento para cabelos coloridos, protegendo a cor e prolongando sua intensidade."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Chroma%20Créme", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/chroma-creme", label="Saiba Mais no site oficial")
     elif linha == 'Fluidfier':
         feedback = "A linha Fluidfier oferece controle de frizz e definição para cabelos lisos."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Pro Longer':
         feedback = "A linha Pro Longer oferece cuidados para cabelos mais longos, fortalecendo e protegendo as pontas."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Blondifier':
         feedback = "A linha Blondifier oferece cuidados específicos para cabelos loiros, neutralizando tons amarelados e proporcionando brilho."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'Inforce':
         feedback = "A linha Inforce oferece fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
     elif linha == 'NutriOil':
         feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
 
     return feedback
 
