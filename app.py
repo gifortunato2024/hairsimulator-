@@ -201,7 +201,3 @@ if submit:
     feedback_linha = feedback_linha_escolhida(linha)
     st.write(f"### Feedback da linha escolhida: {linha}")
     st.write(feedback_linha)
-
-# Exemplo de uso da função
-linha_escolhida = 'Absolut Repair Molecular'
-print(feedback_linha_escolhida(linha_escolhida))
