@@ -162,13 +162,13 @@ def feedback_linha_escolhida(linha):
     elif linha == 'Inforce':
         feedback = "A linha Inforce oferece fortalecimento e reconstrução para cabelos enfraquecidos e quebradiços."
         st.image("ARM.jpeg", width=300)
-        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
-        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Inforcer", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/inforcer", label="Saiba Mais no site oficial")
     elif linha == 'NutriOil':
         feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
         st.image("ARM.jpeg", width=300)
-        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/absolut-repair-molecular/produtos/?utm_source=SITELP&utm_medium=LANDING&utm_campaign=ARM", label="Comprar", icon="🛍️")
-        st.page_link("https://www.lorealprofessionnel.com.br/absolut-repair-molecular-for-hair-lovers", label="Saiba Mais no site oficial")
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=NutriOil", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/nutrioil", label="Saiba Mais no site oficial")
 
     return feedback
 
