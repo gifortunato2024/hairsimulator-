@@ -169,6 +169,16 @@ def feedback_linha_escolhida(linha):
         st.image("ARM.jpeg", width=300)
         st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=NutriOil", label="Comprar", icon="🛍️")
         st.page_link("https://www.lorealprofessionnel.com.br/tratamento/nutrioil", label="Saiba Mais no site oficial")
+    elif linha == 'LissUnlimited':
+        feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Liss%20Unlimited", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/liss-unlimited", label="Saiba Mais no site oficial")
+    elif linha == 'Vitamino Color':
+        feedback = "A linha NutriOil oferece nutrição intensa para cabelos secos e desidratados."
+        st.image("ARM.jpeg", width=300)
+        st.page_link("https://www.segredosdesalao.com.br/loreal-professionnel/produtos/?prefn1=collection&prefv1=Vitamino%20Color", label="Comprar", icon="🛍️")
+        st.page_link("https://www.lorealprofessionnel.com.br/tratamento/vitamino-color-resveratrol", label="Saiba Mais no site oficial")
 
     return feedback
 
