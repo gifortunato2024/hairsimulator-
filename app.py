@@ -13,7 +13,7 @@ from streamlit.components.v1 import html
 import base64
 
 # Configuração
-url = 'https://fec9-2804-14d-5c5c-9ce1-00-1006.ngrok-free.app'
+url = 'https://f029-2804-14d-5c5c-9ce1-00-1008.ngrok-free.app'
 
 ### Funções
 @st.cache_resource
